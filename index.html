@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My heart</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <!-- JQuery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
@@ -14,7 +18,7 @@
             height: 100%;
             padding: 0;
             margin: 0;
-            background-image: linear-gradient(to bottom,#b1b2ff4e, #aac4ff71, #d2daff70, #aac4ff70, #B1B2FF4e );
+            background-image: linear-gradient(to bottom, #b1b2ff4e, #aac4ff71, #d2daff70, #aac4ff70, #B1B2FF4e);
             overflow: hidden;
         }
 
@@ -32,12 +36,10 @@
             background-size: 10%;
             background-repeat: no-repeat;
             background-position: center;
-            
+
             position: absolute;
 
         }
-
-        
     </style>
 </head>
 
@@ -129,8 +131,8 @@
             };
 
             Particle.prototype.update = function (deltaTime) {
-                this.position.x += this.velocity.x * deltaTime ;
-                this.position.y += this.velocity.y * deltaTime ;
+                this.position.x += this.velocity.x * deltaTime;
+                this.position.y += this.velocity.y * deltaTime;
                 this.velocity.x += this.acceleration.x * deltaTime;
                 this.velocity.y += this.acceleration.y * deltaTime;
                 this.age += deltaTime;
@@ -318,8 +320,8 @@
 
         $(document).mousemove(function (e) {
             $(".sun").css({
-                left: e.pageX - $('.sun').height()/2,
-                top: e.pageY - $('.sun').height()/2
+                left: e.pageX - $('.sun').height() / 2,
+                top: e.pageY - $('.sun').height() / 2
             });
         });
     </script>
