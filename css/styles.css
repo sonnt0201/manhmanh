@@ -66,6 +66,7 @@ canvas {
     background-color: rgba(255, 0, 0, 0.365);
     text-align: center;
     font-size: 1.5rem;
+    display: none;
 }
 
 @keyframes animate {
